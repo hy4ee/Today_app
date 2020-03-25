@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/background_3"
+	>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_marginTop="40dp"
+		android:layout_marginBottom="25dp"
+		android:text="오늘의 영상 추천"
+		android:typeface="serif"
+		android:textStyle="bold"
+		android:textSize="40dp"/>
+
+
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_marginLeft="28dp"
+			android:layout_marginTop="120dp"
+			android:layout_marginRight="280dp"
+			android:background="@null"
+			android:gravity="center"
+			android:src="@drawable/icon_dog" />
+
+	<TextView
+		android:id="@+id/feelgood"
+		android:layout_width="266dp"
+		android:layout_height="85dp"
+		android:background="@drawable/icon_yellowbubble"
+		android:gravity="center"
+		android:layout_marginLeft="120dp"
+		android:layout_marginTop="160dp"
+		android:text="오늘의 기분은 어때??"
+		android:textSize="20dp"
+		android:textStyle="bold"
+		android:typeface="serif" />
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp">
+
+		<Button
+			android:id="@+id/Button_good"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginTop="300dp"
+			android:layout_marginBottom="20dp"
+			android:background="@drawable/btn_green"
+			android:text="오늘은 기분이 좋아!!!"
+			android:textSize="20sp"
+			android:typeface="serif" />
+
+		<Button
+			android:id="@+id/Button_tired"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginBottom="20dp"
+			android:background="@drawable/btn_green"
+			android:text="요즘따라 많이 피곤하네.."
+			android:textSize="20sp"
+			android:typeface="serif" />
+
+		<Button
+			android:id="@+id/Button_bored"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginBottom="20dp"
+			android:background="@drawable/btn_green"
+			android:text="아무것도 하기 싫어. 짜증나"
+			android:textSize="20sp"
+			android:typeface="serif" />
+
+		<Button
+			android:id="@+id/Button_fun"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginBottom="20dp"
+			android:background="@drawable/btn_green"
+			android:text="좋은 일이 생겨서 너무 신난다~"
+			android:textSize="20sp"
+			android:typeface="serif" />
+
+	</LinearLayout>
+</FrameLayout>

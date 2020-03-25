@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".HumorActivity"
+	android:paddingLeft="20dp"
+	android:paddingRight="20dp"
+	android:background="@drawable/background_humor"
+	>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/activity_photo"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		tools:context="MemoActivity">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="73dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="20dp"
+			android:gravity="center"
+			android:text="오늘의 유머글"
+			android:textSize="35dp"
+			android:textStyle="bold"
+			android:typeface="serif" />
+
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/text"
+			android:text="넌센스 퀴즈 시작! 맞출 수 있을까요?"
+			android:textSize="23sp"
+			android:textStyle="bold"
+			android:layout_marginBottom="10dp"
+			android:typeface="serif" />
+
+		<Button
+			android:text="next"
+			android:textSize="18dp"
+			android:id="@+id/button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_blue2"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@+id/image"/>
+
+
+	</LinearLayout>
+
+</ScrollView>

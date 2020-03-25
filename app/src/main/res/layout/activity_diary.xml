@@ -1,0 +1,81 @@
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/background_diary"
+            tools:context="com.example.haru.DiaryActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="오늘의 일기"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:layout_width="394dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:paddingRight="30dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+
+                    android:src="@drawable/icon_dog" />
+
+                <TextView
+                    android:id="@+id/todo"
+                    android:layout_width="266dp"
+                    android:layout_height="119dp"
+                    android:background="@drawable/icon_yellowbubble"
+                    android:gravity="center"
+                    android:text="오늘 하루에 무슨일이 있었어?"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_add_black_24dp"
+                    app:fabSize="auto"
+                    app:useCompatPadding="true" />
+
+                <ListView
+                    android:id="@+id/items_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"></ListView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
